@@ -10,6 +10,16 @@ function calculatorLove(){
       const lvpc =Math.floor(Math.random() * 100);
       const result = document.getElementById("result")
       result.innerHTML = `${name1} and ${name2} have a love percentage of: ${lvpc}`;
-       
-    }
+       if (result.innerHTML<30){
+        result.innerHTML +="<br> Just Keep Looking";
+
+       }
+       else if(result.innerHTML>28 && lvpc<=49){
+        result.innerHTML += "<br> Tuff strart but you're getting there"
+    
+       }
+       else{
+        result.innerHTML +="<br> What a match!!!"
+       }
+    } 
 }
